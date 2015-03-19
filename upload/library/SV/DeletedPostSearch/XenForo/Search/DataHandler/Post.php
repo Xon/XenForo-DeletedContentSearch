@@ -26,12 +26,12 @@ class SV_DeletedPostSearch_XenForo_Search_DataHandler_Post extends XFCP_SV_Delet
                 $not_visible = true;
                 $parentData['discussion_state'] = 'visible';
             }
-            if ($not_visible)
-            {
-                $indexer = new SV_DeletedPostSearch_Search_Indexer($indexer, array(
-                    'not_visible' => $not_visible
-                ));
-            }
+            //if ($not_visible)
+            //{
+            //    $indexer = new SV_DeletedPostSearch_Search_Indexer($indexer, array(
+            //        'not_visible' => $not_visible
+            //    ));
+            //}
         }
         parent::_insertIntoIndex($indexer, $data, $parentData);
     }
