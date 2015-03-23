@@ -1,6 +1,6 @@
 <?php
 
-class SV_DeletedPostSearch_Search_Indexer extends XenForo_Search_Indexer
+class SV_DeletedContentSearch_Search_Indexer extends XenForo_Search_Indexer
 {
     protected $_otherIndexer = null;
     protected $_extraMetadata = array();

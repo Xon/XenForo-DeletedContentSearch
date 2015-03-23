@@ -1,8 +1,8 @@
 <?php
 
-class SV_DeletedPostSearch_Listener
+class SV_DeletedContentSearch_Listener
 {
-    const AddonNameSpace = 'SV_DeletedPostSearch';
+    const AddonNameSpace = 'SV_DeletedContentSearch';
 
     public static function install($existingAddOn, $addOnData)
     {

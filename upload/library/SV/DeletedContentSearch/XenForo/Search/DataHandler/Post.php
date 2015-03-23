@@ -1,6 +1,6 @@
 <?php
 
-class SV_DeletedPostSearch_XenForo_Search_DataHandler_Post extends XFCP_SV_DeletedPostSearch_XenForo_Search_DataHandler_Post
+class SV_DeletedContentSearch_XenForo_Search_DataHandler_Post extends XFCP_SV_DeletedContentSearch_XenForo_Search_DataHandler_Post
 {
     var $enabled = false;
 
@@ -8,7 +8,7 @@ class SV_DeletedPostSearch_XenForo_Search_DataHandler_Post extends XFCP_SV_Delet
     {
         // use the proxy class existence as a cheap check for if this addon is enabled.
         $this->_getThreadModel();
-        $this->enable = class_exists('XFCP_SV_DeletedPostSearch_XenForo_Model_Thread', false);
+        $this->enable = class_exists('XFCP_SV_DeletedContentSearch_XenForo_Model_Thread', false);
     }
 
     protected function _insertIntoIndex(XenForo_Search_Indexer $indexer, array $data, array $parentData = null)
@@ -28,7 +28,7 @@ class SV_DeletedPostSearch_XenForo_Search_DataHandler_Post extends XFCP_SV_Delet
             }
             //if ($not_visible)
             //{
-            //    $indexer = new SV_DeletedPostSearch_Search_Indexer($indexer, array(
+            //    $indexer = new SV_DeletedContentSearch_Search_Indexer($indexer, array(
             //        'not_visible' => $not_visible
             //    ));
             //}

@@ -1,6 +1,6 @@
 <?php
 
-class SV_DeletedPostSearch_XenForo_DataWriter_DiscussionMessage_Post extends XFCP_SV_DeletedPostSearch_XenForo_DataWriter_DiscussionMessage_Post
+class SV_DeletedContentSearch_XenForo_DataWriter_DiscussionMessage_Post extends XFCP_SV_DeletedContentSearch_XenForo_DataWriter_DiscussionMessage_Post
 {
     protected function _indexForSearch()
     {
