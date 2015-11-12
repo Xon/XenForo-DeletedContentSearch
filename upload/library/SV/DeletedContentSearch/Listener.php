@@ -2,7 +2,7 @@
 
 class SV_DeletedContentSearch_Listener
 {
-    const AddonNameSpace = 'SV_DeletedContentSearch';
+    const AddonNameSpace = 'SV_DeletedContentSearch_';
 
     public static function install($existingAddOn, $addOnData)
     {
@@ -13,6 +13,6 @@ class SV_DeletedContentSearch_Listener
 
     public static function load_class($class, array &$extend)
     {
-        $extend[] = self::AddonNameSpace.'_'.$class;
+        $extend[] = self::AddonNameSpace.$class;
     }
 }
